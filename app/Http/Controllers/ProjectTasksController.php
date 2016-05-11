@@ -9,10 +9,8 @@ use Prego\Http\Requests;
 use Prego\Http\Controllers\Controller;
 
 class ProjectTasksController extends Controller
-{ 
-
-
-    public function postNewTask(Request $request, $id)
+{  
+ public function postNewTask(Request $request, $id)
     {
         $task = new Task;
          $this->validate($request, [
@@ -43,9 +41,9 @@ class ProjectTasksController extends Controller
             ->where('project_id', $projectId)
             ->where('id', $taskId)
             ->update(['task_name' => $request->input('task_name')]);
-            return redirect()->route('projects.show');  
+            /*return redirect()->route('projects.show');  */
             
-        /*return redirect()->back()->with('info','Your Task has been updated successfully');*/
+        return redirect()->back()->with('info','Your Task has been updated successfully');
     }
     public function deleteOneProjectTask($projectId, $taskId)
     { 

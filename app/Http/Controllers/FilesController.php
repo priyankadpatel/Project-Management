@@ -11,6 +11,11 @@ use Prego\Http\Controllers\Controller;
 
 class FilesController extends Controller
 {
+
+    public function editAccount()
+    { 
+        return view('Account.editAccount');
+     } 
     /**
      * Displays the index page of the app
      *

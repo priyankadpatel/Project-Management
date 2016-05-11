@@ -5,12 +5,12 @@
         </li>
         <li><a href="#"> @ {{ Auth::user()->username }}</a></li>
         <li class="active"><a href="#">PREGO<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Edit Account</a></li>
+        <li><a href="editAccount">Edit Account</a></li>
         <li><a href="{{ route('projects.index') }}">Projects</a></li>
-        <li><a href="#">Todos</a></li>
+        <li><a href="todos">Todos</a></li>
     </ul>
     <ul class="nav nav-sidebar">
-        <li><a href="">Account</a></li>
+        <li><a href="account">Account</a></li>
         <li><a href="">Help</a></li>
         <li><a href="{{ route('auth.logout') }}">Sign Out</a></li>
     </ul>

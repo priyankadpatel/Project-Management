@@ -10,15 +10,20 @@
                             <img src="{{ $collaborator->user()->first()->getAvatarUrl() }}" />
                         </span>
                     </div>
-                    <button class="btn btn-sm btn-danger delete" style="margin-top:5px;padding:4px;width:35px;"
-                      data-action="/projects/{{ $project->id }}/collaborators/{{ $collaborator->collaborator_id }}"
+                </br>
+                    <!-- <a href="/projects/{{ $project->id }}/collaborators/{{ $collaborator->collaborator_id }}">Delete</a> -->
+                   <button class="btn btn-danger delete pull-right" style="margin-right: 302px;"
+                      data-action="/projects/{{ $project->id }}/collaborators/{{ $collaborator->collaborator_id}}"
                       data-token="{{csrf_token()}}">
-                    <i class="fa fa-trash-o"></i>
-                    </button>
-                </div>
+                      <i class="fa fa-trash-o"></i>Delete 
+                    </button>  
+                </div> 
+                <br/>
                 <hr/>
            @endforeach
+
         @endif
+
         <form class="form-vertical" role="form" method="post" action="{{ route('projects.collaborators.create', $project->id) }}">
         <div class="form-group{{ $errors->has('collaborator') ? ' has-error' : '' }}">
             <label> Add New </label>

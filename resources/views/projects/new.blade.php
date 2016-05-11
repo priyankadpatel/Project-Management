@@ -3,11 +3,28 @@
 @section('content')
 
 @include('layouts.partial.sidebar')
- <div class="col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-2 main">
+{{ HTML::style('css/bootstrap-datetimepicker.min.css') }}
+{{ HTML::script('js/jquery-ui.js') }}
+{{ HTML::script('js/bootstrap-datetimepicker.min.js') }}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script type="text/javascript">
+    $('document').ready(function(){ 
+       var currentDate = new Date(); 
+      $('#due-date').datepicker({
+          inline: true,
+          showOtherMonths: true,
+          dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+          dateFormat: 'dd/mm/yy'
+      }); 
+      $("#due-date").datepicker("setDate", currentDate); 
+  });
+</script>
+ 
+<div class="col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-2 main">
     <h1 class="page-header">New Project</h1>
 
     <div class="col-lg-6">
-        <form class="form-vertical" role="form" method="post" action="">
+        <form class="form-vertical" role="form" method="post" action="{{ route('projects.store') }}">
             <div class="form-group{{ $errors->has('status') ? ' has-error' : '' }}">
                 <label for="status" class="control-label">Choose Status</label>
                 <select name="status" id="status">
@@ -29,14 +46,17 @@
             </div>
             <div class="form-group{{ $errors->has('due-date') ? ' has-error' : '' }}">
                 <label for="due-date" class="control-label">Due date</label>
-                <input type="date" name="due-date" class="form-control" id="due-date">
+                <div class="col-sm-13">
+                      <input type="text" name="due-date" class="form-control" id="due-date">
+                </div>
+                
                 @if ($errors->has('due-date'))
                     <span class="help-block">{{ $errors->first('due-date') }}</span>
                 @endif
             </div>
             <div class="form-group{{ $errors->has('notes') ? ' has-error' : '' }}">
                 <label for="notes" class="control-label">Notes</label>
-                <textarea name="notes" class="form-control" id="notes" rows="10" cols="10">
+                <textarea name="notes" class="form-control" id="notes" rows="10" cols="10"> 
                   {{ old('notes') ?: '' }}
                 </textarea>
                 @if ($errors->has('notes'))
@@ -51,3 +71,4 @@
     </div>
 </div>
 @stop
+

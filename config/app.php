@@ -146,8 +146,7 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
-        Illuminate\View\ViewServiceProvider::class,
-
+        Illuminate\View\ViewServiceProvider::class, 
         /*
          * Application Service Providers...
          */
@@ -158,6 +157,8 @@ return [
         JD\Cloudder\CloudderServiceProvider::class,
         Unicodeveloper\Mention\MentionServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+
+
     ],
 
     /*
@@ -171,8 +172,7 @@ return [
     |
     */
 
-    'aliases' => [
-
+    'aliases' => [ 
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
@@ -204,6 +204,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Cloudder'  => JD\Cloudder\Facades\Cloudder::class,
+        'HTML' => 'Collective\Html\HtmlFacade', 
     ],
 
 ];

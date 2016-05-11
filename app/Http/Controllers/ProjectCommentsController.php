@@ -49,7 +49,7 @@ class ProjectCommentsController extends Controller
 
         return redirect()->back()->with('info','Your Comment has been updated successfully');
     } 
-     public function deleteOneProjectComment($projectId, $commentId)
+    public function deleteOneProjectComment($projectId, $commentId)
     {
         Comment::where('project_id', $projectId)
                 ->where('id', $commentId)

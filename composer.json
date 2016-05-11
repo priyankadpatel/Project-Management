@@ -10,7 +10,8 @@
         "filp/whoops": "^2.0",
          "cloudinary/cloudinary_php": "dev-master",
         "jrm2k6/cloudder": "0.2.*",
-        "unicodeveloper/laravel-mentions": "1.1.*"
+        "unicodeveloper/laravel-mentions": "1.1.*",
+        "laravelcollective/html": "~5.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

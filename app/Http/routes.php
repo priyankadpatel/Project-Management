@@ -1,8 +1,5 @@
-<?php 
+<?php  
  
-
-
-
 Route::resource('projects', 'ProjectController');
  
 Route::post('projects/{projects}/tasks', [
@@ -45,6 +42,10 @@ Route::put('projects/{projects}/comments/{comments}', [
 
 Route::delete('projects/{projects}/comments/{comments}', [
     'uses' => 'ProjectCommentsController@deleteOneProjectComment',
+]); 
+
+Route::any('projects/{projects}/collaborators/{collaborator}',[
+    'uses' => 'ProjectCollaboratorsController@deleteProjectCollaborators', 
 ]);
 
 Route::get('/', [
@@ -82,6 +83,17 @@ Route::post('projects/{projects}/files', [
      'as'   => 'projects.files',
      'middleware' => ['auth']
 ]);
+
+Route::any('account','dashbodeController@account');
+Route::any('editAccount','dashbodeController@editAccount');
+
+Route::put('userUpdate/{id}', [
+    'uses' =>'dashbodeController@userUpdate',
+]);
+Route::any('todos','dashbodeController@todos');
+
+
+
 /*Route::post('tasks/{projects}','ProjectTasksController@postNewTask');*/
 
 /*Route::post('disp','ProjectTasksController@disp');*/
