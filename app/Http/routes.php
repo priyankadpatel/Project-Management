@@ -1,5 +1,5 @@
 <?php  
- 
+
 Route::resource('projects', 'ProjectController');
  
 Route::post('projects/{projects}/tasks', [
@@ -91,8 +91,8 @@ Route::put('userUpdate/{id}', [
     'uses' =>'dashbodeController@userUpdate',
 ]);
 Route::any('todos','dashbodeController@todos');
-
-
+ 
+ 
 
 /*Route::post('tasks/{projects}','ProjectTasksController@postNewTask');*/
 

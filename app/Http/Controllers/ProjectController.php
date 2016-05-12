@@ -66,18 +66,17 @@ class ProjectController extends Controller
     } 
     public function update(Request $request, $id)
     { 
-        $project = Project::findOrFail($id);
-
+        $project = Project::findOrFail($id); 
         $this->validate($request, [
             'project_name'     => 'required|min:3',
             'due-date' => 'required|date|after:today',
             'project_notes'    => 'required|min:10',
             'project_status'   => 'required'
-        ]);
-
+        ]); 
         $values = $request->all();  
         $project->update($values); 
-        return view('projects.show')->with('project',$project);
+        /*return view('projects.show')->with('project',$project);*/
+        return redirect()->route('projects.index');
         /*return redirect()->back()->with('info','Your Project has been updated successfully');*/
     }
  

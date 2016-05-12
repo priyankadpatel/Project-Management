@@ -1,6 +1,5 @@
 @extends('layouts.master')
 @section('content')
-
 @include('layouts.partial.sidebar')
 <div class="col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-2 main">
     @include('layouts.partial.alerts')

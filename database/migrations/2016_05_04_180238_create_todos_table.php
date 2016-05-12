@@ -28,13 +28,7 @@ class CreateTodosTable extends Migration
                   ->onDelete('cascade');
         });
     }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
+ public function down()
     {
        Schema::drop('todos');
     }
