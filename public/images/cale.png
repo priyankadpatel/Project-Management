@@ -1,0 +1,426 @@
+
+<!-- saved from url=(0030)http://localhost:8000/manually -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./cale_files/bootstrap-combined.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="screen" href="./cale_files/bootstrap-datetimepicker.min.css">
+<!-- <link media="all" type="text/css" rel="stylesheet" href="http://localhost:8000/assets/css/bootstrap-datetimepicker.min.css">
+ 
+<link media="all" type="text/css" rel="stylesheet" href="http://localhost:8000/assets/css/bootstrap-combined.min.css">
+  -->
+
+
+
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="http://hrms-dev.knowarth.com/sites/default/files/content_0.png" type="image/png">
+  <title>Dashboard | HRMS</title>
+  <link media="all" type="text/css" rel="stylesheet" href="./cale_files/bootstrap.min.css">
+ 
+  <link media="all" type="text/css" rel="stylesheet" href="./cale_files/menu_icons.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="./cale_files/overrides.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="./cale_files/styles.css">
+
+  <link media="all" type="text/css" rel="stylesheet" href="./cale_files/system.base.css">
+  
+<link media="all" type="text/css" rel="stylesheet" href="./cale_files/jquery-ui.css">
+
+</head>
+<body class="html not-front logged-in no-sidebars page-employee-dashboard">
+  <div id="skip-link">
+    <a href="http://localhost:8000/manually#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+
+  <div class="navbar-fixed-top">
+    <header id="navbar" role="banner" class="navbar navbar-default container-fluid">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="logo navbar-btn pull-left" href="http://hrms.knowarth.com/employee-dashboard" title="Home">
+          <img src="./cale_files/logo.png" class="" alt="Home">
+          </a>
+
+          <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <nav role="navigation">
+            <div class="region region-navigation">
+              <section id="block-views-user-profile-info-block" class="block block-views clearfix">
+                <div class="view view-user-profile-info view-id-user_profile_info view-display-id-block view-dom-id-55df3a887f25dfe4966c4f2543b413d0">
+                  <div class="view-content">
+                    <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+                        <div class="views-field views-field-field-profile-image">        
+                          <div class="field-content">
+                            <img typeof="foaf:Image" src="http://localhost:8000/manually" width="100" height="100" alt="">
+                          </div>  
+                        </div>  
+                    <div class="views-field views-field-nothing">
+                     <span class="field-content">
+                        <div class="user-info-links dropdown-menu">
+                          <div class="media"> 
+                            <div class="media-left pull-left"> 
+                              <p><img typeof="foaf:Image" src="http://localhost:8000/manually" width="100" height="100" alt=""></p> 
+                            </div> 
+                            <div class="media-body"> 
+                                <p class="media-heading">Priyanka Patel</p>
+                               <span class="hrms_designation"></span>
+                               <span class="hrms_Email">priyanka.patel@knowarth.com</span>
+                            </div> 
+                            </div>
+
+                            <div class="Profile_footer-dropdown">
+                              <a class="pull-left btn btn-info" href="http://localhost:8000/profile-personal_details/267">My Account</a>
+                              <a class="pull-right btn btn-danger" href="http://localhost:8000/logout" style="display: none;">Logout</a>
+                            </div>
+                        </div>
+                        </span> 
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+</section> <!-- /.block -->
+</div>
+</nav>
+</div>
+</div>
+</header>
+<div class="container-fluid hrms-navbarmain">
+  <header role="banner" id="page-header" class="container">    
+      <div class="region region-header">
+          <section id="block-menu-menu-employee-header-menu-links" class="block block-menu clearfix">
+            <ul class="menu nav">
+              <li class="first leaf">
+                <a href="http://hrms.knowarth.com//employee-dashboard" class="menu_icon menu-721 active-trail active">Dashboard</a>
+              </li>
+
+              <li class="leaf">
+                <a href="http://hrms.knowarth.com//employees-list" class="menu_icon menu-1249">My Coullegues</a>
+              </li>
+
+              <li class="leaf">
+                <a href="http://hrms.knowarth.com//employee-contact-details" class="menu_icon menu-1121">Employee Contact Details</a>
+              </li>
+
+              <li class="leaf">
+                <a href="http://hrms.knowarth.com//holidays" class="menu_icon menu-1094">Holiday</a>
+              </li>
+
+              <li class="expanded leaf ">
+                <a href="http://hrms.knowarth.com//apply_leave" class="menu_icon menu-1376">LMS</a>
+              </li>
+              
+              <li class="leaf">
+                <a href="http://localhost:8000/" class="menu_icon menu-1249">Attendance</a>
+ 
+              </li> 
+                        <li class="last expanded leaf">
+              <a href="http://localhost:8000/manually#" class="" data-target="#" data-toggle="dropdown">Reports<span class="caret"></span></a>
+              <ul class="dropdown-menu"> 
+                  <li class="first leaf" style="background-color:#25AAE2;border-bottom-style: solid; border-color:#0284B9;border-width: 1.5px;">
+                    <input type="button" id="userby" class="btn btn-link dropbtn dropdown" style="text-decoration:none;width: 159px;text-align: left;" value="User By Report">
+                  </li>
+                  <li class="last leaf" style="background-color:#25AAE2;border-bottom-style: solid; border-color:#0284B9;border-width: 1.5px;">
+                    <input type="button" id="monthby" class="btn btn-link dropbtn" style="text-decoration:none;width: 159px;text-align: left;" value="Month By Report">
+                  </li>
+                  <li class="last leaf" style="background-color:#25AAE2;border-bottom-style: solid; border-color:#0284B9;border-width: 1.5px;">
+                    <input type="button" id="dayby" class="btn btn-link dropbtn" style="text-decoration:none;width: 159px;text-align: left;" value="Day By Report">
+                  </li>
+                  <li class="last leaf" style="background-color:#25AAE2;border-bottom-style: solid; border-color:#0284B9;border-width: 1.5px;">
+                    <input type="button" id="statusby" class="btn btn-link dropbtn" style="text-decoration:none;width: 159px;text-align: left;" value="Status Report">
+                  </li>
+                  <li class="last leaf" style="background-color:#25AAE2;border-bottom-style: solid; border-color:#0284B9;border-width: 1.5px;">
+                    <input type="button" id="manually" class="btn btn-link dropbtn" style="text-decoration:none;width: 159px;text-align: left;" value="Manually In-Out">
+                  </li>   
+              </ul>      
+            </li>
+            
+                      
+              
+                
+            </ul>
+</section> <!-- /.block -->
+</div>
+</header> <!-- /#page-header -->
+</div>
+</div>
+
+<div class="hrms-mainContentData">
+<div class="main-container container">
+
+<div class="row" style="margin-bottom:10px;margin-right: 2px">
+ <div class="pull-right" id="drop_cal_graph" style="display: none;">
+   
+          <div class="col-lg-7">
+      <select selected="true" class="form-control" name="emp " id="emp" style="width:100%;" onchange="">
+           <option value="">-- Select Employee --</option>
+ 
+                      <option value="KA150403E"> Kandarp Patel </option>
+               
+                  <option value="KA150407E" selected="selected"> Priyanka Patel </option>
+               
+            </select>
+      </div>
+          
+      <div class="btn-group pull-right" style="display: none;">              
+            
+                  <a href="http://localhost:8000/calender?id=KA150407E" class="btn btn-primary">Calender</a>
+
+                  <a href="http://localhost:8000/chart?id=KA150407E" class="btn btn-primary" id="chart">Graph</a>
+
+                  </div>
+       
+  </div>
+</div>
+<h1 class="page-header">Manually  In-Out Report</h1>
+
+
+<div class="view-filters even" style="background-color: #e1eded;height: 242px;border-radius: 5px 5px 5px 5px;">
+
+  <form class="form-vertically" role="form" action="http://localhost:8000/manuallyReportInsert" method="post">
+
+  <div class="row">
+      <label for="empname" class="control-label col-sm-2">Employee Name</label>
+      <div class="col-sm-3">
+        <select class="form-control" name="name" id="emp_name" autofocus=""> 
+          <option value="0">Select Employee</option>
+                       <option value="KA150403E">Kandarp Patel</option>
+                       <option value="KA150407E" selected="selected">Priyanka Patel</option>
+           
+        </select>
+               </div> 
+  </div>
+<div style="margin-left: 196px; color:red;" name="emp_name_msg" id="emp_name_msg"></div>
+
+  <div class="row" style="margin-top:7px;">
+    <label for="date" class="control-label col-sm-2">Date</label>
+    <div class="col-sm-3">
+      <input class="form-control hasDatepicker" id="date" style="height:33px" name="date" type="text">
+    </div>
+  </div>
+
+  <div class="row">
+      <label for="date" class="control-label col-sm-2">Checkin</label>
+      <div class="col-sm-7" id="checkin_time">      
+          <div id="checkin" class="input-append">
+            <input data-format="hh:mm:ss" type="text" name="checkin" id="checkin1" style="height:33px">
+             <span class="add-on" style="height:33px" id="checkin_btn">
+              <i data-time-icon="icon-time" data-date-icon="icon-calendar" class="icon-time">
+              </i>
+            </span>
+          </div>
+        </div>
+  </div>
+     <div style="margin-left: 196px; color:red;" name="checkin_msg" id="checkin_msg"> </div>
+  <div class="row">
+      <label for="date" class="control-label col-sm-2">Checkout</label>
+      <div class="col-sm-7" id="checkout_time">      
+          <div id="checkout" class="input-append">
+            <input data-format="hh:mm:ss" type="text" name="checkout" id="checkout1" style="height:33px">
+             <span class="add-on" style="height:33px" id="checkout_btn">
+              <i data-time-icon="icon-time" data-date-icon="icon-calendar" class="icon-time">
+              </i>
+            </span>
+          </div>
+      </div>
+  </div>
+    <div style="margin-left: 196px; color:red;" name="checkout_msg" id="checkout_msg"></div>
+  <div class="row" style="margin-top:10px;">
+    <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-info">Submit</button>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+
+<footer class="footer container">
+    <div class="region region-footer">
+    <section id="block-block-2" class="block block-block  col-md-12 clearfix">
+    <div id="bottom_part">
+      <div class="left">
+       <h2 class="title">Copyright HRMS. All rights reserved</h2>
+      </div>
+      <div class="center">
+           <h2 class="title">HRMS <span>0.1</span></h2>
+      </div>
+      <div class="right">
+             <h2 class="title">Developed By <img src="./cale_files/content.png"></h2>
+      </div>
+    </div>
+    </section> <!-- /.block -->
+  </div>
+</footer>
+</div>
+<script src="./cale_files/jquery.min.js"></script>
+
+<script src="./cale_files/bootstrap.min.js"></script>
+
+<script src="./cale_files/cookie.js"></script>
+
+<script type="text/javascript">
+
+$('document').ready(function(){
+
+    $('#userby').click(function(){
+       url = "/userBy";
+       window.location.replace(url); 
+    });
+
+    $('#monthby').click(function(){
+       url = "/monthBy";
+       window.location.replace(url); 
+    });
+
+    $('#dayby').click(function(){
+       url = "/day_report";
+       window.location.replace(url); 
+    });
+
+    $('#statusby').click(function(){
+       url = "/status";
+       window.location.replace(url); 
+    });
+
+    $('#manually').click(function(){
+       url = "/manually";
+       window.location.replace(url); 
+    });
+
+
+    if(window.location.href.indexOf("userBy") > -1|| window.location.href.indexOf("manually") > -1 ||window.location.href.indexOf("status") > -1 ||window.location.href.indexOf("monthBy") > -1 || window.location.href.indexOf("day_report") > -1  ) {
+          $(".pull-right").hide(); 
+    }
+
+    // Manage Dropdown Start
+    var empcode = 'KA150407E'
+    
+    if(empcode != ""){
+      $("select option[value="+empcode+"]").attr("selected","selected");
+    }
+
+     $('#emp').change(function(){
+        var val=$(this).val();
+        
+        if(val != ""){
+            window.location='chart?id=' + val
+
+            if(window.location.href.indexOf("next") > -1 || window.location.href.indexOf("previous") > -1 ){ 
+               var emp_code = $(this).val();
+               window.location.replace("/chart?id="+emp_code);     
+            } 
+        }
+ 
+     });
+    // Manage Dropdown End
+
+    function hideAll(){
+      jQuery(".user-info-links.dropdown-menu").hide();
+      jQuery(".notification-count .view-message-notifications table").hide();
+    }
+    //jQuery("#block-views-user-profile-info-block .user-info-links").hide();
+    jQuery("#block-views-user-profile-info-block").click(function(){
+      jQuery(".notification-count .view-message-notifications table").hide();
+      jQuery(".user-info-links.dropdown-menu").toggle();
+    });
+    //jQuery(".notification-count .view-message-notifications table").hide();
+    jQuery("#notification-img").click(function(){
+      jQuery(".user-info-links.dropdown-menu").hide();
+      jQuery(".notification-count .view-message-notifications table").fadeToggle("slow");
+    });
+    jQuery("#edit-search-block-form--2").on({
+      keyup:function(){
+      hideAll();
+     }
+    })
+});
+    
+</script>
+<script src="./cale_files/jquery-ui.js"></script>
+
+<script src="./cale_files/bootstrap-datetimepicker.min.js"></script>
+
+
+<script type="text/javascript">
+$('document').ready(function(){
+      var currentDate = new Date();
+
+      $('#date').datepicker({ 
+          maxDate: new Date,
+          inline: true,
+          showOtherMonths: true, 
+          dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], 
+          dateFormat: 'dd/mm/yy',
+          
+      }); 
+
+      $("#date").datepicker("setDate", currentDate); 
+
+      $('#msg').delay(2000).fadeOut();
+ 
+      $('#checkin').datetimepicker({
+        pickDate: false
+      });
+
+      $('#checkout').datetimepicker({
+        pickDate: false
+      });
+
+      $('#emp_name').change(function(){
+           var val = $(this).val();
+           if(val == 0)
+           {
+               $('#emp_name_msg').text("Please Select Employee Name");
+           }
+           else
+           {  
+              $('#emp_name_msg').text(" ");  
+           }
+      });
+
+      $('#checkin_btn').click(function(){
+           var val1 = $('#checkin1').val();
+           $('#checkin_msg').text(" ");  
+      });
+    
+    $('#checkin1').blur(function(){
+       var val1 = $('#checkin1').val();
+       if(val1.length == 0)
+       {
+          $('#checkin_msg').text("Please select checkin time"); 
+       }
+       else
+       {
+          $('#checkin_msg').text(" ");   
+       }
+     });
+      
+    $('#checkout_btn').click(function(){
+           var val1 = $('#checkout1').val();
+           $('#checkout_msg').text(" ");  
+      });
+    
+    $('#checkout1').blur(function(){
+       var val1 = $('#checkout1').val();
+       if(val1.length == 0)
+       {
+          $('#checkout_msg').text("Please select checkin time"); 
+       }
+       else
+       {
+          $('#checkout_msg').text(" ");   
+       }
+     });
+});
+</script>
+
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all ui-state-disabled" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">May</span>&nbsp;<span class="ui-datepicker-year">2016</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Sun</span></th><th scope="col"><span title="Monday">Mon</span></th><th scope="col"><span title="Tuesday">Tue</span></th><th scope="col"><span title="Wednesday">Wed</span></th><th scope="col"><span title="Thursday">Thu</span></th><th scope="col"><span title="Friday">Fri</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sat</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">1</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">2</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">3</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">4</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">5</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">6</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">7</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">8</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">9</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">10</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">11</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default" href="http://localhost:8000/manually#">12</a></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="4" data-year="2016"><a class="ui-state-default ui-state-highlight ui-state-active ui-state-hover" href="http://localhost:8000/manually#">13</a></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">14</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">15</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">16</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">17</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">18</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">19</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">20</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">21</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">22</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">23</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">24</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">25</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">26</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">27</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">28</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">29</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">30</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">31</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td></tr></tbody></table></div><div class="bootstrap-datetimepicker-widget dropdown-menu" style="display: none; position: absolute; top: 325.344px; left: 425.54px; right: auto;"><div class="timepicker"><div class="timepicker-picker"><table class="table-condensed"><tbody><tr><td><a href="http://localhost:8000/manually#" class="btn" data-action="incrementHours"><i class="icon-chevron-up"></i></a></td><td class="separator"></td><td><a href="http://localhost:8000/manually#" class="btn" data-action="incrementMinutes"><i class="icon-chevron-up"></i></a></td><td class="separator"></td><td><a href="http://localhost:8000/manually#" class="btn" data-action="incrementSeconds"><i class="icon-chevron-up"></i></a></td></tr><tr><td><span data-action="showHours" data-time-component="hours" class="timepicker-hour">10</span></td> <td class="separator">:</td><td><span data-action="showMinutes" data-time-component="minutes" class="timepicker-minute">27</span></td> <td class="separator">:</td><td><span data-action="showSeconds" data-time-component="seconds" class="timepicker-second">28</span></td></tr><tr><td><a href="http://localhost:8000/manually#" class="btn" data-action="decrementHours"><i class="icon-chevron-down"></i></a></td><td class="separator"></td><td><a href="http://localhost:8000/manually#" class="btn" data-action="decrementMinutes"><i class="icon-chevron-down"></i></a></td><td class="separator"></td><td><a href="http://localhost:8000/manually#" class="btn" data-action="decrementSeconds"><i class="icon-chevron-down"></i></a></td></tr></tbody></table></div><div class="timepicker-hours" data-action="selectHour" style="display: none;"><table class="table-condensed"><tbody><tr><td class="hour">00</td><td class="hour">01</td><td class="hour">02</td><td class="hour">03</td></tr><tr><td class="hour">04</td><td class="hour">05</td><td class="hour">06</td><td class="hour">07</td></tr><tr><td class="hour">08</td><td class="hour">09</td><td class="hour">10</td><td class="hour">11</td></tr><tr><td class="hour">12</td><td class="hour">13</td><td class="hour">14</td><td class="hour">15</td></tr><tr><td class="hour">16</td><td class="hour">17</td><td class="hour">18</td><td class="hour">19</td></tr><tr><td class="hour">20</td><td class="hour">21</td><td class="hour">22</td><td class="hour">23</td></tr></tbody></table></div><div class="timepicker-minutes" data-action="selectMinute" style="display: none;"><table class="table-condensed"><tbody><tr><td class="minute">00</td><td class="minute">03</td><td class="minute">06</td><td class="minute">09</td></tr><tr><td class="minute">12</td><td class="minute">15</td><td class="minute">18</td><td class="minute">21</td></tr><tr><td class="minute">24</td><td class="minute">27</td><td class="minute">30</td><td class="minute">33</td></tr><tr><td class="minute">36</td><td class="minute">39</td><td class="minute">42</td><td class="minute">45</td></tr><tr><td class="minute">48</td><td class="minute">51</td><td class="minute">54</td><td class="minute">57</td></tr></tbody></table></div><div class="timepicker-seconds" data-action="selectSecond" style="display: none;"><table class="table-condensed"><tbody><tr><td class="second">00</td><td class="second">03</td><td class="second">06</td><td class="second">09</td></tr><tr><td class="second">12</td><td class="second">15</td><td class="second">18</td><td class="second">21</td></tr><tr><td class="second">24</td><td class="second">27</td><td class="second">30</td><td class="second">33</td></tr><tr><td class="second">36</td><td class="second">39</td><td class="second">42</td><td class="second">45</td></tr><tr><td class="second">48</td><td class="second">51</td><td class="second">54</td><td class="second">57</td></tr></tbody></table></div></div></div><div class="bootstrap-datetimepicker-widget dropdown-menu"><div class="timepicker"><div class="timepicker-picker"><table class="table-condensed"><tbody><tr><td><a href="http://localhost:8000/manually#" class="btn" data-action="incrementHours"><i class="icon-chevron-up"></i></a></td><td class="separator"></td><td><a href="http://localhost:8000/manually#" class="btn" data-action="incrementMinutes"><i class="icon-chevron-up"></i></a></td><td class="separator"></td><td><a href="http://localhost:8000/manually#" class="btn" data-action="incrementSeconds"><i class="icon-chevron-up"></i></a></td></tr><tr><td><span data-action="showHours" data-time-component="hours" class="timepicker-hour">10</span></td> <td class="separator">:</td><td><span data-action="showMinutes" data-time-component="minutes" class="timepicker-minute">27</span></td> <td class="separator">:</td><td><span data-action="showSeconds" data-time-component="seconds" class="timepicker-second">28</span></td></tr><tr><td><a href="http://localhost:8000/manually#" class="btn" data-action="decrementHours"><i class="icon-chevron-down"></i></a></td><td class="separator"></td><td><a href="http://localhost:8000/manually#" class="btn" data-action="decrementMinutes"><i class="icon-chevron-down"></i></a></td><td class="separator"></td><td><a href="http://localhost:8000/manually#" class="btn" data-action="decrementSeconds"><i class="icon-chevron-down"></i></a></td></tr></tbody></table></div><div class="timepicker-hours" data-action="selectHour" style="display: none;"><table class="table-condensed"><tbody><tr><td class="hour">00</td><td class="hour">01</td><td class="hour">02</td><td class="hour">03</td></tr><tr><td class="hour">04</td><td class="hour">05</td><td class="hour">06</td><td class="hour">07</td></tr><tr><td class="hour">08</td><td class="hour">09</td><td class="hour">10</td><td class="hour">11</td></tr><tr><td class="hour">12</td><td class="hour">13</td><td class="hour">14</td><td class="hour">15</td></tr><tr><td class="hour">16</td><td class="hour">17</td><td class="hour">18</td><td class="hour">19</td></tr><tr><td class="hour">20</td><td class="hour">21</td><td class="hour">22</td><td class="hour">23</td></tr></tbody></table></div><div class="timepicker-minutes" data-action="selectMinute" style="display: none;"><table class="table-condensed"><tbody><tr><td class="minute">00</td><td class="minute">03</td><td class="minute">06</td><td class="minute">09</td></tr><tr><td class="minute">12</td><td class="minute">15</td><td class="minute">18</td><td class="minute">21</td></tr><tr><td class="minute">24</td><td class="minute">27</td><td class="minute">30</td><td class="minute">33</td></tr><tr><td class="minute">36</td><td class="minute">39</td><td class="minute">42</td><td class="minute">45</td></tr><tr><td class="minute">48</td><td class="minute">51</td><td class="minute">54</td><td class="minute">57</td></tr></tbody></table></div><div class="timepicker-seconds" data-action="selectSecond" style="display: none;"><table class="table-condensed"><tbody><tr><td class="second">00</td><td class="second">03</td><td class="second">06</td><td class="second">09</td></tr><tr><td class="second">12</td><td class="second">15</td><td class="second">18</td><td class="second">21</td></tr><tr><td class="second">24</td><td class="second">27</td><td class="second">30</td><td class="second">33</td></tr><tr><td class="second">36</td><td class="second">39</td><td class="second">42</td><td class="second">45</td></tr><tr><td class="second">48</td><td class="second">51</td><td class="second">54</td><td class="second">57</td></tr></tbody></table></div></div></div></body></html>
