@@ -11,7 +11,7 @@
     <div class="container">
          <div class="row">
             <div class="col-md-3" style="border:1px solid #ccc;margin-left:5px;padding:10px;">
-              <p>Due : {!! date_format(new DateTime($project->due_date), "D, m Y") !!}</p>
+              <p>Due : {!! date_format(new DateTime($project->due_date), "d-m-Y") !!}</p>
               <p>Status: {!! $project->project_status !!}</p>
               <p>Tasks: {{ count($tasks) }} </p>
               <p>Comments: {{ count($comments) }}</p>
@@ -29,8 +29,7 @@
     
  <div class="row">
         @include('tasks.form') 
-        @include('files.form')
-          
+        @include('files.form') 
         </div>
         <hr>
          @include('comments.form') 

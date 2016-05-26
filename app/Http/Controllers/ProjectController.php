@@ -26,11 +26,10 @@ class ProjectController extends Controller
     }
  
      public function store(Request $request)
-    	{  
-    	 
+    	{   
         $this->validate($request, [
             'name'     => 'required|min:3',
-            'due-date' => 'required|date|after:today',
+            'due-date' => 'required',
             'notes'    => 'required|min:10',
             'status'   => 'required'
         ]);
@@ -40,14 +39,15 @@ class ProjectController extends Controller
         $project->project_status = $request->input('status');
         $project->due_date       = $request->input('due-date');
         $project->project_notes  = $request->input('notes');
-        $project->user_id  = Auth::user()->id;
+        $project->user_id  = Auth::user()->id; 
 		$project->save();
+        
         return redirect()->route('projects.index')->with('info','Your Project has been created successfully');
     	}
  
     public function show($id)
     { 
-        $project  = Project::find($id);
+        $project  = Project::find($id); 
         $tasks = $this->getTasks($id);
         $files = $this->getFiles($id);
         $collaborators = $this->getCollaborators($id);
@@ -69,7 +69,7 @@ class ProjectController extends Controller
         $project = Project::findOrFail($id); 
         $this->validate($request, [
             'project_name'     => 'required|min:3',
-            'due-date' => 'required|date|after:today',
+            'due-date' => 'required',
             'project_notes'    => 'required|min:10',
             'project_status'   => 'required'
         ]); 

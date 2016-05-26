@@ -21,6 +21,7 @@ class CreateProjectsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->date('due_date');
             $table->timestamps();
+            
  
             $table->foreign('user_id')
                   ->references('id')->on('users')

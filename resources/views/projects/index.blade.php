@@ -15,10 +15,10 @@
     <div class="container">
       @if($project)
          <div class="row">
-             @foreach ($project as $proj)
+             @foreach ($project as $proj) 
                <div class="col-md-3" style="border:1px solid #ccc;margin-left:5px;">
                <h2><a href="/projects/{{ $proj->id }}">{!! $proj->project_name !!}</a></h2>
-               <p>Due : {!! date_format(new DateTime($proj->due_date), "D, m Y") !!}</p>
+               <p>Due : {!! date_format(new DateTime($proj->due_date), "d-m-Y") !!}</p>
                <p>Status: {!! $proj->project_status !!}</p>
                <p>Tasks: 0</p>
                <p>Comments: 0</p>
